@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en" >
+  <head>
+    <meta charset="UTF-8">
+    <title>EvilCrowRF</title>
+    <link href="style.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="lib.js"></script>
+    <link rel="icon" href="/ECRF.ico" type="image/x-icon">
+  </head>
+      <body>
+        <div id="nav-bar">
+          <input id="nav-toggle" type="checkbox"/>
+          <div id="nav-header"><a id="nav-title" href="/"><img src="data:image/png;base64,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"/></i> Evil Crow RF</a>
+            <label for="nav-toggle"><span id="nav-toggle-burger"></span></label>
+            <hr/>
+          </div>
+          <div id="nav-content">
+            <div class="nav-button"><a href="/txconfig"><span style="margin-right: 10px;"></span><svg xmlns="http://www.w3.org/2000/svg" height=".9rem" viewBox="0 0 700 512" fill="#8392a5" style="margin-right: 13px;" ><path d="M176 24c0-13.3-10.7-24-24-24s-24 10.7-24 24V64c-35.3 0-64 28.7-64 64H24c-13.3 0-24 10.7-24 24s10.7 24 24 24H64v56H24c-13.3 0-24 10.7-24 24s10.7 24 24 24H64v56H24c-13.3 0-24 10.7-24 24s10.7 24 24 24H64c0 35.3 28.7 64 64 64v40c0 13.3 10.7 24 24 24s24-10.7 24-24V448h56v40c0 13.3 10.7 24 24 24s24-10.7 24-24V448h56v40c0 13.3 10.7 24 24 24s24-10.7 24-24V448c35.3 0 64-28.7 64-64h40c13.3 0 24-10.7 24-24s-10.7-24-24-24H448V280h40c13.3 0 24-10.7 24-24s-10.7-24-24-24H448V176h40c13.3 0 24-10.7 24-24s-10.7-24-24-24H448c0-35.3-28.7-64-64-64V24c0-13.3-10.7-24-24-24s-24 10.7-24 24V64H280V24c0-13.3-10.7-24-24-24s-24 10.7-24 24V64H176V24zM160 128H352c17.7 0 32 14.3 32 32V352c0 17.7-14.3 32-32 32H160c-17.7 0-32-14.3-32-32V160c0-17.7 14.3-32 32-32zm192 32H160V352H352V160z"/></svg></span><span>TX Config</span></a></div>
+            <div class="nav-button"><a href="/txprotocol"><span style="margin-right: 10px;"></span></span><svg xmlns="http://www.w3.org/2000/svg" height=".9rem" viewBox="0 0 700 512" fill="#8392a5" style="margin-right: 13px;"><path d="M62.6 2.3C46.2-4.3 27.6 3.6 20.9 20C7.4 53.4 0 89.9 0 128s7.4 74.6 20.9 108c6.6 16.4 25.3 24.3 41.7 17.7S86.9 228.4 80.3 212C69.8 186.1 64 157.8 64 128s5.8-58.1 16.3-84C86.9 27.6 79 9 62.6 2.3zm450.8 0C497 9 489.1 27.6 495.7 44C506.2 69.9 512 98.2 512 128s-5.8 58.1-16.3 84c-6.6 16.4 1.3 35 17.7 41.7s35-1.3 41.7-17.7c13.5-33.4 20.9-69.9 20.9-108s-7.4-74.6-20.9-108C548.4 3.6 529.8-4.3 513.4 2.3zM340.1 165.2c7.5-10.5 11.9-23.3 11.9-37.2c0-35.3-28.7-64-64-64s-64 28.7-64 64c0 13.9 4.4 26.7 11.9 37.2L98.9 466.8c-7.3 16.1-.2 35.1 15.9 42.4s35.1 .2 42.4-15.9L177.7 448H398.3l20.6 45.2c7.3 16.1 26.3 23.2 42.4 15.9s23.2-26.3 15.9-42.4L340.1 165.2zM369.2 384H206.8l14.5-32H354.7l14.5 32zM288 205.3L325.6 288H250.4L288 205.3zM163.3 73.6c5.3-12.1-.2-26.3-12.4-31.6s-26.3 .2-31.6 12.4C109.5 77 104 101.9 104 128s5.5 51 15.3 73.6c5.3 12.1 19.5 17.7 31.6 12.4s17.7-19.5 12.4-31.6C156 165.8 152 147.4 152 128s4-37.8 11.3-54.4zM456.7 54.4c-5.3-12.1-19.5-17.7-31.6-12.4s-17.7 19.5-12.4 31.6C420 90.2 424 108.6 424 128s-4 37.8-11.3 54.4c-5.3 12.1 .2 26.3 12.4 31.6s26.3-.2 31.6-12.4C466.5 179 472 154.1 472 128s-5.5-51-15.3-73.6z"/></svg></span><span>URH Protocol</span></a></div>
+            <div class="nav-button"><a href="/rfanalize"><span style="margin-right: 10px;"></span><svg xmlns="http://www.w3.org/2000/svg" height=".9rem" viewBox="0 0 700 512" fill="#8392a5" style="margin-right: 13px;"><path d="M128 64c0-17.7 14.3-32 32-32H320c17.7 0 32 14.3 32 32V416h96V256c0-17.7 14.3-32 32-32H608c17.7 0 32 14.3 32 32s-14.3 32-32 32H512V448c0 17.7-14.3 32-32 32H320c-17.7 0-32-14.3-32-32V96H192V256c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32h96V64z"/></svg><span>RF Analyze</span></a></div>
+            <hr/>
+           
+            <div class="nav-button"><a href="/jammer"><span style="margin-right: 10px;"></span><svg xmlns="http://www.w3.org/2000/svg" height=".9rem" viewBox="0 0 700 512" fill="#8392a5" style="margin-right: 13px;"><path d="M367.2 412.5L99.5 144.8C77.1 176.1 64 214.5 64 256c0 106 86 192 192 192c41.5 0 79.9-13.1 111.2-35.5zm45.3-45.3C434.9 335.9 448 297.5 448 256c0-106-86-192-192-192c-41.5 0-79.9 13.1-111.2 35.5L412.5 367.2zM0 256a256 256 0 1 1 512 0A256 256 0 1 1 0 256z"/></svg><span>Simple Jammer</span></a></div>
+            <div class="nav-button"><a href="/bruteforce"><span style="margin-right: 10px;"></span><svg xmlns="http://www.w3.org/2000/svg" height="1rem" viewBox="0 0 700 512" fill="#8392a5" style="margin-right: 13px;"><path d="M144 144c0-44.2 35.8-80 80-80c31.9 0 59.4 18.6 72.3 45.7c7.6 16 26.7 22.8 42.6 15.2s22.8-26.7 15.2-42.6C331 33.7 281.5 0 224 0C144.5 0 80 64.5 80 144v48H64c-35.3 0-64 28.7-64 64V448c0 35.3 28.7 64 64 64H384c35.3 0 64-28.7 64-64V256c0-35.3-28.7-64-64-64H144V144z"/></svg><span>Brute Force</span></div>
+            <div class="nav-button"><a href="/txtesla"><span style="margin-right: 10px;"></span><svg xmlns="http://www.w3.org/2000/svg" height=".9rem" viewBox="0 0 700 512" fill="#8392a5" style="margin-right: 13px;"><path d="M176 8c-6.6 0-12.4 4-14.9 10.1l-29.4 74L55.6 68.9c-6.3-1.9-13.1 .2-17.2 5.3s-4.6 12.2-1.4 17.9l39.5 69.1L10.9 206.4c-5.4 3.7-8 10.3-6.5 16.7s6.7 11.2 13.1 12.2l78.7 12.2L90.6 327c-.5 6.5 3.1 12.7 9 15.5s12.9 1.8 17.8-2.6l35.3-32.5 9.5-35.4 10.4-38.6c8-29.9 30.5-52.1 57.9-60.9l41-59.2c11.3-16.3 26.4-28.9 43.5-37.2c-.4-.6-.8-1.2-1.3-1.8c-4.1-5.1-10.9-7.2-17.2-5.3L220.3 92.1l-29.4-74C188.4 12 182.6 8 176 8zM367.7 161.5l135.6 36.3c6.5 1.8 11.3 7.4 11.8 14.2l4.6 56.5-201.5-54 32.2-46.6c3.8-5.6 10.8-8.1 17.3-6.4zm-69.9-30l-47.9 69.3c-21.6 3-40.3 18.6-46.3 41l-10.4 38.6-16.6 61.8-8.3 30.9c-4.6 17.1 5.6 34.6 22.6 39.2l15.5 4.1c17.1 4.6 34.6-5.6 39.2-22.6l8.3-30.9 247.3 66.3-8.3 30.9c-4.6 17.1 5.6 34.6 22.6 39.2l15.5 4.1c17.1 4.6 34.6-5.6 39.2-22.6l8.3-30.9L595 388l10.4-38.6c6-22.4-2.5-45.2-19.6-58.7l-6.8-84c-2.7-33.7-26.4-62-59-70.8L384.2 99.7c-32.7-8.8-67.3 4-86.5 31.8zm-17 131a24 24 0 1 1 -12.4 46.4 24 24 0 1 1 12.4-46.4zm217.9 83.2A24 24 0 1 1 545 358.1a24 24 0 1 1 -46.4-12.4z"/></svg></span><span>Tesla Charge</span></a></div>
+            <hr/>
+           
+            <div class="nav-button"><a href="/logger"><span style="margin-right: 10px;"></span><svg xmlns="http://www.w3.org/2000/svg" height=".9rem" viewBox="0 0 700 512" fill="#8392a5" style="margin-right: 13px;"><path d="M448 80v48c0 44.2-100.3 80-224 80S0 172.2 0 128V80C0 35.8 100.3 0 224 0S448 35.8 448 80zM393.2 214.7c20.8-7.4 39.9-16.9 54.8-28.6V288c0 44.2-100.3 80-224 80S0 332.2 0 288V186.1c14.9 11.8 34 21.2 54.8 28.6C99.7 230.7 159.5 240 224 240s124.3-9.3 169.2-25.3zM0 346.1c14.9 11.8 34 21.2 54.8 28.6C99.7 390.7 159.5 400 224 400s124.3-9.3 169.2-25.3c20.8-7.4 39.9-16.9 54.8-28.6V432c0 44.2-100.3 80-224 80S0 476.2 0 432V346.1z"/></svg></span><span>RX Log</span></a></div>
+            <div class="nav-button"><a href="/wificonfig"><span style="margin-right: 10px;"></span><svg xmlns="http://www.w3.org/2000/svg" height=".9rem" viewBox="0 0 700 512" fill="#8392a5" style="margin-right: 13px;"><path d="M54.2 202.9C123.2 136.7 216.8 96 320 96s196.8 40.7 265.8 106.9c12.8 12.2 33 11.8 45.2-.9s11.8-33-.9-45.2C549.7 79.5 440.4 32 320 32S90.3 79.5 9.8 156.7C-2.9 169-3.3 189.2 8.9 202s32.5 13.2 45.2 .9zM320 256c56.8 0 108.6 21.1 148.2 56c13.3 11.7 33.5 10.4 45.2-2.8s10.4-33.5-2.8-45.2C459.8 219.2 393 192 320 192s-139.8 27.2-190.5 72c-13.3 11.7-14.5 31.9-2.8 45.2s31.9 14.5 45.2 2.8c39.5-34.9 91.3-56 148.2-56zm64 160a64 64 0 1 0 -128 0 64 64 0 1 0 128 0z"/></svg></span><span>WiFi Config</span></a></div>
+            <div class="nav-button"><a href="/update"><span style="margin-right: 10px;"></span><svg xmlns="http://www.w3.org/2000/svg" height=".9rem" viewBox="0 0 700 512" fill="#8392a5" style="margin-right: 13px;"><path d="M105.1 202.6c7.7-21.8 20.2-42.3 37.8-59.8c62.5-62.5 163.8-62.5 226.3 0L386.3 160H336c-17.7 0-32 14.3-32 32s14.3 32 32 32H463.5c0 0 0 0 0 0h.4c17.7 0 32-14.3 32-32V64c0-17.7-14.3-32-32-32s-32 14.3-32 32v51.2L414.4 97.6c-87.5-87.5-229.3-87.5-316.8 0C73.2 122 55.6 150.7 44.8 181.4c-5.9 16.7 2.9 34.9 19.5 40.8s34.9-2.9 40.8-19.5zM39 289.3c-5 1.5-9.8 4.2-13.7 8.2c-4 4-6.7 8.8-8.1 14c-.3 1.2-.6 2.5-.8 3.8c-.3 1.7-.4 3.4-.4 5.1V448c0 17.7 14.3 32 32 32s32-14.3 32-32V396.9l17.6 17.5 0 0c87.5 87.4 229.3 87.4 316.7 0c24.4-24.4 42.1-53.1 52.9-83.7c5.9-16.7-2.9-34.9-19.5-40.8s-34.9 2.9-40.8 19.5c-7.7 21.8-20.2 42.3-37.8 59.8c-62.5 62.5-163.8 62.5-226.3 0l-.1-.1L125.6 352H176c17.7 0 32-14.3 32-32s-14.3-32-32-32H48.4c-1.6 0-3.2 .1-4.8 .3s-3.1 .5-4.6 1z"/></svg></span><span>Elegant OTA</span></a></div>
+              
+            <div id="nav-content-highlight"></div>
+          </div>
+              <input id="nav-footer-toggle" type="checkbox"/>
+              <div id="nav-footer">
+                <div id="nav-footer-heading">
+                  <div id="nav-footer-avatar"><svg xmlns="http://www.w3.org/2000/svg" version="1.0" viewBox="0 0 216 216"><path d="M0 108v108h216V0H0v108zM117 4h3a39 39 0 0 1 6 1 22 22 0 0 1 4 1h3l2 1h1l2 1h2l1 1a29 29 0 0 1 6 2l4 2a194 194 0 0 1 13 6l2 2a106 106 0 0 1 32 32l1 2a106 106 0 0 1 14 39v4a281 281 0 0 1-1 29l-1 4-1 3v1l-1 2a26 26 0 0 1-1 5v1l-1 1a9 9 0 0 1-1 2v2l-1 1-1 2a122 122 0 0 1-11 18 111 111 0 0 1-29 27l-1 1a112 112 0 0 1-41 14l-4 1H94a66 66 0 0 1-12-3 50 50 0 0 1-7-2 52 52 0 0 1-9-3 110 110 0 0 1-19-11h-1a110 110 0 0 1-35-44l-1-2-1-2v-1l-1-1v-2l-1-1-1-4v-2l-1-1v-3l-1-2v-3l-1-2v-3l-1-3a213 213 0 0 1 2-29l1-2a40 40 0 0 1 2-8v-2l1-1v-2l1-2v-1h1v-1a102 102 0 0 1 18-29l1-1a152 152 0 0 1 15-14 145 145 0 0 1 26-15h1l3-1 9-3a81 81 0 0 1 13-2h21z"/><path d="M67 15v2h-7v2h76v-2h-11v-3H67v1zm-10 7v2l1-1v1a24590 24590 0 0 0 102-1v-1h-2v-2H58v2l-1-1v1zm-1 3v5h104v-5H56zm0 6v5h52a10484 10484 0 0 0 53-3v-2H56zm-2 8v2h107v-4H54v2zm-1 3v5h109v-5H53zm0 8v2h55l54 1v-4h2-1l-1-1H53v2zm-1 6v2h112v-5H52v3zm-15 3v2h-8v3h152v-2l-4-1h-5v-2H37zm-12 6v4h164v-4H25zm0 5v3h2v2h159v-2h3v-3H25zm14 7v1h9v2h126v-2h5v-2H39v1zm17 4-2 1h-1l1 1c2 0 2 0 0 0v1h1-2l1 1h1-2v1h13v-5H56zm11 3v2h5v-2h72v2h5v-5H67v3zm86-3v5h9v-3h2-1l-1-1v-1h-9zm-99 8v3h7v-5h-7v2zm11-1v1h-1 1v1h-1v-3 3h1v1l1 1v-5h-1v1zm88 1v3h9v-5h-9v2zm-99 4v4h7v-4h-7zm103-1-1 3v2h5v-5h-4zm8 0v3h-2v2h7v-2h-3v-2l-2-1zM43 98l-1 2v3h4v-2h7-2l1 1h1-2v1h119v-5h-5a1355 1355 0 0 0-118 0h-4zm1 6v2h2v-2h-2zm9 0v1l-2 1h-2l-1 1v1h119v-4H53zm-10 5-1 3 1 2h2v-5h-2zm5 3v2h119v-5H48v3zm-4 4v1h-2v-2 3h2v2h2v-5h-2v1zm7-1v5h57v-3h5v3h54v-5H51zm-6 8v2l1-1 1-2-1-1-1-1v3zm6 0v2h5l-1-3v-2h-4v3zm7 0v2h47v-2l1-3H58v3zm57 0v2h50v-5h-50v3zm-64 5v3h3v-5h-3v2zm7 0v3h45v-5H58v2zm59-2h-1l-1 1h2l-1 1h-1 1l1 1h-2 1l1 1h-2v1h47v-3h1v-1h-1v-1h-45zm-66 6v4h3v-4h-3zm7 0v4h6v-4h-6zm10 0v2h7v2h12v-2h9v-2H68zm50 0-1 2v2h4v-4h-3zm9 0v2h14v2h19v-4h-33zm38 0v4h1v-4h-1zm-112 5v3l-1-2v-1 3-3 3l1 1v1h12v-5h-7v3h-1c-1 0-2 0-2-2v-1h-2zm66 3v2h2v-5h-2v3zm34-3v5h9v-1h-2 1l1-1h-2 5v-3h-12zm-97 7v1h2v2h3l4 1v-3c1 0 1 0 0 0v-2h-9v1zm64-1v5h2v-2h1v1-1h1v1-2h-2v-2h-2zm6 0v4h1l1 1v-5h-2zm27 0h-1l-1 1h2-1l-1 1h2-1l-1 1h2l-1 1h-1v1l3-1h4v-4h-5zm-58 2-1 1h1v1h-1v1h9v-3h-8zm-35 6v2h7v-2h1l1 1c0 1 0 1 0 0v-1h-2v-3h-7v3zm38-2h-2l1 1h1-2l1 1h1-2l2 1h-1l-1 1h31l-2-1h2v-1l1 1v1-2 1c0 1 0 1 0 0v-1h-3 2l-1-1h-1 1l1-1h-2l-5-1h-5v3h-7v-3h-5l-5 1zm53 1v1h-2v1c0 1 0 1 0 0l1-1h1v2h4v-1l1-2-1-1v-1h-4v2zm-88 4h-1l-2 1h3l-1 1h-2 3l-2 1h-1 2l1 1h-3v1h10v-5h-7zm28 1v4h1v-5l-1 1zm5-1v2h-2v3-1h1v-1l1 1v1h2l3-1v-1h-1l-2-1h3-2v-1h2l-1-1h-4zm9 0h-1l-1 1h2v1h-2 2l-1 1h-1 1l1 1h-2v1h7v-2l5-1h5-3l-2-1h5v-1h-15zm36 2v3h2v-3l1-2h-3v2zm7 0v3h6v-5h-6v2zm-33 2 2 1 3-1h-5zm-52 4v2h7v-4h-7v2zm10 0 1 2h5l-1-1c-1 0-1 0 0 0h1l-1-1h-1 2l-1-1h-1 1l1-1h-6v2zm16-2h-2l1 1h1-1c-1 0-2 0-1 1h2-1c-1 0-2 0-1 1h1l-1 1h2c2 0 2 1 2-2s0-2-1-2h-1zm5 0a40 40 0 0 0 0 4h7l-1-1c-2 0-2 0 0 0h1l-1-1h-2 1l2-1h-3 2l1-1h-7zm10 2 1 2h4v-4h-5v2zm16-2h-3l1 1h1c1 0 1 0 0 0l-2 1h2c1 0 1 0 0 0h-1l-1 1h2c1 0 1 0 0 0l-2 1h4v-4h-1zm8 2v2h4l-2-1h-1 3v-1h-3 4-1l-1-1h-2 2l1-1h-4v2zm11 0c0 3 0 2 2 2l1-2v-2h-3v2zm8 0v2h6v-4h-6v2zm-82 3v5h5v-2l1 1v1-2c1 0 0 0 0 0h-1v-3h-5zm10 0v5h4v-5h-4zm12 0v5h3v-5h-3zm4 0v5h18v-5H91zm22 0v3h-2v2-2l1 1v1-2l1 1v1h23v-5h-23zm26 0v5h3v-5h-3zm7 0v5h3v-5h-3zm-79 8v2h5v-1l1-1h-1v-2h-5v2zm8-2v1l-1 1h1l2 1v1h2v-4h-4zm29 0v4h1l1-1v-1h16v-2h-18zm30 0v2h2v-2h-2zm5 0v4h2v-1h1-1v-1s0-1 0 0l1-1h-1v-1h-2zm7 0h-1l-1 1h2-1l-1 1h2-2v1h2l-1 1h-1 3v-4h-1zm-75 8v2h6v-2h-2v-3h-4v3zm8 0v2h3v-5h-3v3zm22-1v1h14v2h7l-2-1h3-1v-1h-2l2-1h-2 1l1-1h-2l-10-1h-9v2zm38-1h-3l1 1h1c1 0 0 0 0 0h-2l2 1h1-3l1 1h2-2l-1 1h9v-5h-1l-1 1h-4zm-64 6-1 1v-2 1l-1 1v1h2v2h5l6-1h-2l1-1h1-1v-1h1l-1-1c-1 1-1 0 0 0h1l-1-1H75v1zm59 1v3h7v-3h2v-2h-9v2zm-57 5v1h2v2h7v-2l1-2H77v1zm55 0v1h-2v1c0 1 0 1 0 0v-1h2v2h7v-1l1-1v-3 3-2 1l-1 1v-2h-7v1zm-50 5v2h2v2h7v-1l1-1 1 1c0 1 0 1 0 0v-1h-4v-3h-7v1zm45 0v2h-2v2h9v-2h2v-3h-9v1zm-36 5v2h5v2h14v-1h-9 9l-6-1h-3 9l-4-1h-5 4a83 83 0 0 0 5-1H91zm24 0v2h12v-2h-12z"/></svg></div>
+                  <div id="nav-footer-titlebox"><a id="nav-footer-title" href="https://github.com/DMFSouza" target="_blank">D.Miguel</a><span id="nav-footer-subtitle" style="color:#00d166">HUN73R0047</span></div>
+                  <label for="nav-footer-toggle"><i class="fas fa-caret-up"></i></label>
+                </div>
+                <div id="nav-footer-content">
+                  <Lorem>Developer, passionate about the field of information security, Red Teamer with a focus on hardware hacking and social engineering.</Lorem>
+                </div>
+              </div>
+            </div>
+<div class="wcf-notification wcf-success" id="success-notification">
+  <div class="wcf-notice-content">
+      <div class="wcf-notice">
+          <a href="#" class="close close-btn" onclick="closeNotification('success-notification')"></a>
+          <div class="wcf-notice-title">RX Configured</div>
+          <div class="wcf-notice-description"></div>
+      </div>
+  </div>
+</div>
+<main>
+  <div class="container">
+    <div class="helper">
+      <br>
+       <p>TX Protocol: </p>
+    <FORM action="/settxprotocol" method="post" id="config" target="iframe" onsubmit="return showsuccess()">
+   
+    <label class="custom-select" for="styledSelect1">
+    <select name="mod" form="config" id="styledSelect1">
+      <option value="" disabled selected>Modulation</option>
+       <option value="0">2-FSK</option>
+       <option value="2">ASK/OOK</option>
+    </select>
+    </label>
+    <br>
+    <div class="webflow-style-input">
+      <input class=""  step="any" form="config"  name="xmlname" placeholder="XML File:"></input>
+    </div>
+    <br>
+    <div class="webflow-style-input">
+      <input class=""  type="number" step="any" form="config" name="frequency" placeholder="Frequency:"></input>
+    </div>
+    <br>
+    <div class="webflow-style-input">
+      <input class=""  type="number" step="any" form="config"  name="samplepulse" placeholder="Sample Pulse:"></input>
+    </div>  
+    <br>
+    <div class="webflow-style-input">
+      <input class=""  type="number" step="any" form="config" name="deviation" placeholder="Deviation:"></input>
+    </div>  
+    <br>
+    <INPUT type="radio" name="configmodule" value="4" hidden="1" checked="checked">
+      <br>
+      <INPUT class="button-submit" type="submit" value="Transmit">
+</form>
+<br>
+<div class="divisor"></div>
+<br>
+<FORM method='POST' action="/listxmlfiles"  id="config" target="iframe" >
+  <p>List Protocols: </p>
+  <textarea class="webflow-style-input"  id="XmlTextArea"></textarea>
+  
+</form>
+<br>
+<div class="divisor"></div>
+<br>
+<p>Upload Protocol: </p>
+<form method='POST' action='/upload' enctype='multipart/form-data' onsubmit="return showsuccessupload()";>
+  <label for="upload" style="border-radius: 3px; background-color: #00d166; color: #000; font-weight: bold; padding: 5px 5px; cursor: pointer;">Escolher arquivo</label>
+  <input type='file' name='upload' id="upload" style="display: none;">
+  
+  <span id="nomeDocumento">Nenhum arquivo selecionado para</span><span> </span><input type='submit' value='Upload'  style="border-radius: 3px; background-color: #00d166; color: #000; font-weight: bold; padding: 5px 5px; cursor: pointer;">
+  <br>
+</form>
+</main>
+</div>
+</div>
+<iframe style="visibility: hidden;" src="http://" )+local_IPstr+"/settxprotocol" name="iframe"></iframe>
+<script>
+  function showNotification(type) {
+    var notification = document.getElementById(type + "-notification");
+    notification.style.display = "block";
+}
+
+// Função para ocultar automaticamente os avisos após alguns segundos (exemplo: 5 segundos)
+function hideNotification(notification) {
+    setTimeout(function () {
+        notification.style.display = "none";
+    }, 5000); // 5000 milissegundos = 5 segundos
+}
+
+// Ocultar automaticamente todos os avisos após alguns segundos
+var notifications = document.querySelectorAll(".wcf-notification");
+notifications.forEach(function (notification) {
+    hideNotification(notification);
+});
+
+function closeNotification(id) {
+    var notification = document.getElementById(id);
+    notification.style.display = "none";
+}
+
+function showsuccess(){
+var  modValue = document.querySelector('select[name="mod"]').value;
+if(document.querySelector('select[name="mod"]').value =="0"){
+modValue = "2-FSK"
+} else {
+modValue ="ASK/OOK"
+}
+var xmlname = document.querySelector('input[name="xmlname"]').value;
+var frequency = document.querySelector('input[name="frequency"]').value;
+var xmlname = document.querySelector('input[name="xmlname"]').value;
+var samplepulse = document.querySelector('input[name="samplepulse"]').value;
+var deviation = document.querySelector('input[name="deviation"]').value;
+
+var descricaoElement = document.querySelector('.wcf-notice-description');
+var successMessage =          
+    "Modulation: " + modValue + "<br>" +
+    "XML File:" +xmlname+ "<br>" +
+    "Frequency: " + frequency + "<br>" +
+    "Sample Pulse: " + samplepulse + "<br>" +
+    "Deviation: " + deviation + "<br>" ;
+
+  descricaoElement.innerHTML = successMessage.replace(/\n/g, '<br>');
+  showNotification('success');
+return true;
+}
+
+function showsuccessupload(){
+var descricaoElement = document.querySelector('.wcf-notice-description');
+var successMessage =
+  "Upload Success" + "<br>" ;
+  descricaoElement.innerHTML = successMessage.replace(/\n/g, '<br>');
+showNotification('success');
+return true;
+}
+document.getElementById('upload').addEventListener('change', function() {
+  var nomeArquivo = this.files[0].name;
+  document.getElementById('nomeDocumento').textContent = 'Documento selecionado: ' + nomeArquivo;
+});
+</script>
+</body>
+</html>

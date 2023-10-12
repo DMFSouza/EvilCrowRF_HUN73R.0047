@@ -6,11 +6,16 @@
 <strong>If you enjoyed this project, consider buying me a coffee:</strong>
 <br>
 <a href="https://www.buymeacoffee.com/davidmiguel">
-  <img src="https://github.com/DMFSouza/EvilCrowRF_HUN73R.0047/blob/main/images/bmc_qr.png" alt="coffee" width="200" height="200">
+  <img src="https://github.com/DMFSouza/EvilCrowRF_HUN73R.0047/blob/main/images/bmc_qr.png" alt="coffee" width="350" height="350">
 </a>
 <br>
 <strong>If you're Brazilian, consider using Pix key:</strong>
 <br>
+<a href="#">
+  <img src="https://github.com/DMFSouza/EvilCrowRF_HUN73R.0047/blob/main/images/qr-code.png" alt="coffee" width="350" height="350">
+</a>
+<br>
+</ul>
 <strong>To check the original firmware:</strong> Joel Serna (@JoelSernaMoreno - https://github.com/joelsernamoreno/).
 
 # Preview

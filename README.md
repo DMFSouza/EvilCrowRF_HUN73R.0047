@@ -32,7 +32,6 @@
 
 # Summary
 
-<li><strong><a href="#introduction">6) Firmware Update</a></strong></li>
 <li><strong><a href="#installation">Installation</a></strong></li>
 <ul>
 <li><a href="#sdfiles">1) SD Files</a></li>

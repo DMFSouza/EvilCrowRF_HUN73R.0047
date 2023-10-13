@@ -49,7 +49,7 @@
 # Introduction<a id="introduction"></a>
 This firmware is an alternative to the EvilCrowRF default firmware.
 
-This project includes all the features of the original firmware and some enhancements such as::
+This project includes all the features of the original firmware and some enhancements such as:
 <ul>
 <li>New modern design based on the original firmware.</li>
 <li>APK for easier use on mobile devices.</li>

@@ -1,7 +1,8 @@
 # EvilCrowRF Firmware  HUN73R.0047
 
 <strong>Firmware designed and developed by</strong> David Miguel (HUN73R.0047) (https://github.com/DMFSouza).
-
+<br>
+<strong>The project underwent significant responsiveness adjustments for mobile devices, please download the latest version.</strong>
 <br><br>
 <strong>If you enjoyed this project, consider buying me a coffee:</strong>
 <br>

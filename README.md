@@ -2,6 +2,7 @@
 
 <strong>Firmware designed and developed by</strong> David Miguel (HUN73R.0047) (https://github.com/DMFSouza).
 <br><br>
+<strong>"Due to lack of time to update the project, I'm open-sourcing the code. The source code can be found at /EvilCrow-RFv2. Please note that the code is not in its final version as I was still working on it, so I ask for your understanding regarding any flaws. Any contributions will be greatly appreciated.</strong>
 <strong>The project underwent significant responsiveness adjustments for mobile devices, please download the latest version.</strong>
 <br><br>
 <strong>If you enjoyed this project, consider buying me a coffee:</strong>
